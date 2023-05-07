@@ -2,7 +2,7 @@
 
 import fetch from "node-fetch";
 import minimist from "minimist"
-import moment from "moment";
+import moment from "moment-timezone";
 
 const args = minimist(process.argv.slice(2));
 if(args.h){
@@ -14,7 +14,7 @@ if(args.h){
         -z            Time zone: uses tz.guess() from moment-timezone by default.
         -d 0-6        Day to retrieve weather: 0 is today; defaults to 1.
         -j            Echo pretty JSON from open-meteo API and exit.`)
-        processs.exit(0);
+        process.exit(0);
 
 }
 
