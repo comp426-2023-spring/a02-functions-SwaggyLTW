@@ -19,8 +19,8 @@ if(args.h){
 }
 
 const timezone = moment.tz.guess()
-const lat = args.n || args.s ;
-const long = args.e || args.w ;
+const lat = args.n || args.s*-1 ;
+const long = args.e || args.w*-1 ;
 const days = args.d
 
 
