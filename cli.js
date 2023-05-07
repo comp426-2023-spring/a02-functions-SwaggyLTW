@@ -6,7 +6,7 @@ import moment from "moment";
 
 const args = minimist(process.argv.slice(2));
 if(args.h){
-    try{
+    
     console.log(`Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE
         -h            Show this help message and exit.
         -n, -s        Latitude: N positive; S negative.
@@ -15,9 +15,7 @@ if(args.h){
         -d 0-6        Day to retrieve weather: 0 is today; defaults to 1.
         -j            Echo pretty JSON from open-meteo API and exit.`)
         processs.exit(0);
-}catch{
-process.exit(1);
-} 
+
 }
 
 const timezone = moment.tz.guess()
