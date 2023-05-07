@@ -1,0 +1,24 @@
+{
+  "name": "galosh",
+  "version": "1.0.0",
+  "description": "Should you wear galoshes?",
+  "main": "index.js",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "repository": {
+    "type": "git",
+    "url": "a02-functions-SwaggyLTW"
+  },
+  "author": "SwaggyLTW",
+  "license": "GPL-3.0-or-later",
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "moment-timezone": "^0.5.43",
+    "node-fetch": "^3.3.1"
+  }
+}
