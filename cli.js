@@ -18,11 +18,11 @@ if(args.h){
 }catch{
 process.exit(1);
 } 
-
+}
 
 const timezone = moment.tz.guess()
-const lat = args.n || args.s;
-const long = args.e || args.w;
+const lat = args.n || args.s ;
+const long = args.e || args.w ;
 const days = args.d
 
 
@@ -39,5 +39,4 @@ if(days == 0){
     console.log("in " +days+" days.");
 } else {
     console.log("tomorrow");
-}
 }
