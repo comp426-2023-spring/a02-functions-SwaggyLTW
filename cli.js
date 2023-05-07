@@ -1,8 +1,12 @@
 #!/usr/bin/env node
+
+import fetch from "node-fetch";
+import minimist from "minimist"
 import moment from "moment";
+
 let timezone = moment.tz.guess();
-const args = process.argv.slice(2);
-if(args.contains('-h')){
+const args = minimist(process.argv.slice(2));
+if(args.h){
     try{
     console.log(`Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE
         -h            Show this help message and exit.
